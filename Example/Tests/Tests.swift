@@ -1,5 +1,5 @@
 import XCTest
-import SUISideMenu
+//import SUISideMenu
 
 class Tests: XCTestCase {
     

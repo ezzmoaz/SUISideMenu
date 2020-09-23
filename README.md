@@ -13,7 +13,7 @@
 * **[Usage](#usage)**
   * [Code Implementation](#code-implementation)
 * [Author](#author)
-* [Creadit](#author)
+* [Credits](#credits)
 * [License](#license)
 
 ## Overview
@@ -29,7 +29,7 @@ Check out the example project to see it in action!
 ### Preview Samples
 | slideInOver | slideInOut | 
 | --- | --- | 
-| ![](https://raw.githubusercontent.com/ezzmoaz/SUISideMenu/Assests/slideInOver.gif) | ![](https://raw.githubusercontent.com/ezzmoaz/SUISideMenu/Assests/slideInOut.gif) |
+| ![](https://github.com/ezzmoaz/SUISideMenu/blob/master/Assests/slideInOut.gif) | ![](https://github.com/ezzmoaz/SUISideMenu/blob/master/Assests/slideInOver.gif) |
 
 ## Requirements
 - [x] Xcode 11 or higher.
@@ -110,7 +110,7 @@ SideMenu(menuWidth: 0.6, // <= 1
             })
 ```
 
-## Credit
+## Credits
 Inspired by this article
 
 [https://medium.com/flawless-app-stories/implementing-snap-carousel-in-swiftui-3ae084504670](https://medium.com/flawless-app-stories/implementing-snap-carousel-in-swiftui-3ae084504670)

@@ -1,5 +1,5 @@
 # SUISideMenu
-[![Version](https://img.shields.io/cocoapods/v/SideMenu.svg?style=flat-square)](http://cocoapods.org/pods/SUISideMenu) [![License](https://img.shields.io/cocoapods/l/SideMenu.svg?style=flat-square)](http://cocoapods.org/pods/SideMenu)
+[![License](https://img.shields.io/cocoapods/l/SideMenu.svg?style=flat-square)](http://cocoapods.org/pods/SideMenu)
 [![Platform](https://img.shields.io/cocoapods/p/SideMenu.svg?style=flat-square)](http://cocoapods.org/pods/SideMenu)
 
 ### If you like SUISideMenu, give it a ★ at the top right of this page.
@@ -29,7 +29,7 @@ Check out the example project to see it in action!
 ### Preview Samples
 | slideInOver | slideInOut | 
 | --- | --- | 
-| ![](https://github.com/ezzmoaz/SUISideMenu/blob/master/Assests/slideInOut.gif) | ![](https://github.com/ezzmoaz/SUISideMenu/blob/master/Assests/slideInOver.gif) |
+| ![](https://github.com/ezzmoaz/SUISideMenu/blob/master/Assests/slideInOver.gif) | ![](https://github.com/ezzmoaz/SUISideMenu/blob/master/Assests/slideInOut.gif) |
 
 ## Requirements
 - [x] Xcode 11 or higher.
@@ -90,7 +90,7 @@ var body: some View {
 
 You Can Customize the sideMenu as Follow
 ```swift
-SideMenu(menuWidth: 0.6, // <= 1
+            SideMenu(menuWidth: 0.6, // <= 1
                      menuStyle: self.myMenuStyle,// .slideInOver || .slideInOut
                      blur: 2,
                      scale: 1, // <= 1

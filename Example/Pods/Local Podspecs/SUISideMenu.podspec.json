@@ -1,8 +1,7 @@
 {
   "name": "SUISideMenu",
   "version": "0.1.0",
-  "summary": "A short description of SUISideMenu.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "SUISideMenu is Simple Side menu solution for those who want to up and run very quickly. It is write with/for SwiftUI. It is simple to use",
   "homepage": "https://github.com/ezzmoaz/SUISideMenu",
   "license": {
     "type": "MIT",
@@ -16,7 +15,9 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "13.0"
   },
-  "source_files": "SUISideMenu/Classes/**/*"
+  "swift_versions": "5.0",
+  "source_files": "SUISideMenu/Classes/**/*",
+  "swift_version": "5.0"
 }

@@ -159,7 +159,3 @@ public struct SideMenu<SideMenu : View, MainView : View> : View {
 }
 
 
-public enum MenuStyle: Equatable {
-    case slideInOver
-    case slideInOut
-}

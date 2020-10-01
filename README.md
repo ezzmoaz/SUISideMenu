@@ -68,6 +68,11 @@ First:
 import SideMenu
 ```
 
+Please make sure to add the following environmentObject preferred in the SceneDelegte or as the examples below
+```swift
+.environmentObject(UIStateModel())
+```
+
 
 Then in the Body of the very first View use it as follow:
 ```swift
@@ -84,7 +89,7 @@ var body: some View {
             Text("mainView")
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background(Color.blue)
-        })
+        })).environmentObject(UIStateModel()) //Very Important
     }
 ```
 
@@ -107,7 +112,7 @@ You Can Customize the sideMenu as Follow
                 Text("mainView")
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .background(Color.blue)
-            })
+            }).environmentObject(UIStateModel()) //Very Important
 ```
 
 ## Credits
@@ -117,7 +122,7 @@ Inspired by this article
 
 ## Author
 
-moazezz, moazezz@icloud.com
+Moazezz, moazezz@icloud.com
 
 ## License
 

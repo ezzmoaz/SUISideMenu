@@ -13,6 +13,7 @@
 		4A04F856EB2A4F6A87C0B126DFD518AE /* SUISideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AEA5649B73ABCDE16F98E967347E83 /* SUISideMenu-dummy.m */; };
 		5D70267662C49DCC59E080EF094E371F /* Pods-SUISideMenu_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E1B35F9CD373188B25D5B108DB04E5 /* Pods-SUISideMenu_Tests-dummy.m */; };
 		73DDBDE175B39AA53B637A19078B33EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		75171E102526190B0066985F /* MenuStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75171E0F2526190B0066985F /* MenuStyle.swift */; };
 		A68B1EB25A744C0DCCD0F6A16ACC6BE6 /* Pods-SUISideMenu_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC8F927A7224E6A38F42BD12C12106C3 /* Pods-SUISideMenu_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C041947CB495D393E619C59E72CF67D5 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2677637EDB41C8D32717C334A4571BA /* SideMenu.swift */; };
 		D638718BB93DFF40CD66E652EF306A38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
@@ -38,24 +39,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04DD12FAA90DFBEF1993A0DC94E86619 /* SUISideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SUISideMenu.framework; path = SUISideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04DD12FAA90DFBEF1993A0DC94E86619 /* SUISideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SUISideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08BC2423D0F89C2FAB39C17EF6003426 /* Pods-SUISideMenu_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SUISideMenu_Example.release.xcconfig"; sourceTree = "<group>"; };
 		0CD589DD85C52ED2C27D404DACC9C27B /* Pods-SUISideMenu_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SUISideMenu_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		1A54147E4FC35CE46C003FA4C4F3F616 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		1A54147E4FC35CE46C003FA4C4F3F616 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		440E2979684927988303815FCEA38CA5 /* Pods-SUISideMenu_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SUISideMenu_Example-umbrella.h"; sourceTree = "<group>"; };
 		44577A18C67EC98A02FE13A8B809CBE9 /* Pods-SUISideMenu_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SUISideMenu_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		5BCF2050F403991AFE1D3BFEC736AE4C /* Pods-SUISideMenu_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SUISideMenu_Tests-Info.plist"; sourceTree = "<group>"; };
 		64D887F11C23248E62E36D88ECFB97F7 /* SUISideMenu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SUISideMenu-Info.plist"; sourceTree = "<group>"; };
 		6A59EF1509E04A7FB13462CC071F4730 /* Pods-SUISideMenu_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SUISideMenu_Example.modulemap"; sourceTree = "<group>"; };
+		75171E0F2526190B0066985F /* MenuStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuStyle.swift; sourceTree = "<group>"; };
 		80AEA5649B73ABCDE16F98E967347E83 /* SUISideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SUISideMenu-dummy.m"; sourceTree = "<group>"; };
-		8587EA92B1D5FF13F5972CB9A439E367 /* Pods_SUISideMenu_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SUISideMenu_Example.framework; path = "Pods-SUISideMenu_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8587EA92B1D5FF13F5972CB9A439E367 /* Pods_SUISideMenu_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SUISideMenu_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8843C1CE048DE4A1A93700CB9DADDCF9 /* Pods-SUISideMenu_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SUISideMenu_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8847E0F4B98D25FECC73CC34418FEAE2 /* SUISideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SUISideMenu.modulemap; sourceTree = "<group>"; };
 		8F6CDBB1E26A29F8AFD83C5593EF11FB /* Pods-SUISideMenu_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SUISideMenu_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		94B14450D3B1D6B61DFA45883B0ECED4 /* Pods-SUISideMenu_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SUISideMenu_Example-dummy.m"; sourceTree = "<group>"; };
-		960752C73172535ADD907AAF2FF68BCE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		960752C73172535ADD907AAF2FF68BCE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E5DDB9AE4B699C8B3E23587DB2DCC91 /* Pods-SUISideMenu_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SUISideMenu_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		A72D1C533DF76197887528DC46461D95 /* SUISideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SUISideMenu-umbrella.h"; sourceTree = "<group>"; };
 		AA41EAD847C75C73F987A5CFE554CFDE /* Pods-SUISideMenu_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SUISideMenu_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -66,10 +68,10 @@
 		D6E1B35F9CD373188B25D5B108DB04E5 /* Pods-SUISideMenu_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SUISideMenu_Tests-dummy.m"; sourceTree = "<group>"; };
 		E2677637EDB41C8D32717C334A4571BA /* SideMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenu.swift; path = SUISideMenu/Classes/SideMenu.swift; sourceTree = "<group>"; };
 		E4E8A8749FCBAB44164C22EE6EF8E135 /* SUISideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SUISideMenu.xcconfig; sourceTree = "<group>"; };
-		E97EA771D1901A1AD6008E4D6893986B /* SUISideMenu.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SUISideMenu.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E97EA771D1901A1AD6008E4D6893986B /* SUISideMenu.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SUISideMenu.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		EC8D653A7C5AED3B342696B69F9E545B /* Pods-SUISideMenu_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SUISideMenu_Example-Info.plist"; sourceTree = "<group>"; };
 		EC8F927A7224E6A38F42BD12C12106C3 /* Pods-SUISideMenu_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SUISideMenu_Tests-umbrella.h"; sourceTree = "<group>"; };
-		ECCCB7C2495082CD737DADC22E6ED5A8 /* Pods_SUISideMenu_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SUISideMenu_Tests.framework; path = "Pods-SUISideMenu_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECCCB7C2495082CD737DADC22E6ED5A8 /* Pods_SUISideMenu_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SUISideMenu_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB555CAD9A531EDCD26B799FDE40775A /* UIStateModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIStateModel.swift; path = SUISideMenu/Classes/UIStateModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,6 +151,7 @@
 				FB555CAD9A531EDCD26B799FDE40775A /* UIStateModel.swift */,
 				7FDAEABE6402D0C4AFFBA720603C1F2C /* Pod */,
 				0A718443C42237A74372DFB7B4B1EEDB /* Support Files */,
+				75171E0F2526190B0066985F /* MenuStyle.swift */,
 			);
 			name = SUISideMenu;
 			path = ../..;
@@ -368,6 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C041947CB495D393E619C59E72CF67D5 /* SideMenu.swift in Sources */,
+				75171E102526190B0066985F /* MenuStyle.swift in Sources */,
 				4A04F856EB2A4F6A87C0B126DFD518AE /* SUISideMenu-dummy.m in Sources */,
 				44CACF8C6CC4D79328ADC32D4293679A /* UIStateModel.swift in Sources */,
 			);
@@ -496,8 +500,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

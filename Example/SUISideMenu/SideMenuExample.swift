@@ -14,7 +14,7 @@ import SUISideMenu
 
 struct SideMenuExample: View {
     @EnvironmentObject var UIState: UIStateModel
-    @State var myMenuStyle : MenuStyle = .slideInOver
+    @State var myMenuStyle : SUISideMenu.MenuStyle = .slideInOver
     @State var menuWidthValue : Int = 6
     @State var blurValue : Int = 2
     @State var dimValue : Int = 2
@@ -77,7 +77,7 @@ struct SideMenuExample: View {
                         .pickerStyle(SegmentedPickerStyle())
                         
                         Text("Blur")
-                        Text("Only avalible With slideInOver menu Style, Could affect the performance (try to keep it at minimum)")
+                        Text("Only avalible With slideInOver menu Style.")
                             .font(.caption)
                             .lineLimit(nil)
                         Picker("Blur", selection: self.$blurValue) {

@@ -65,7 +65,7 @@ $ pod install
 ### Code Implementation
 First:
 ```swift
-import SideMenu
+import SUISideMenu
 ```
 
 Please make sure to add the following environmentObject preferred in the SceneDelegte or as the examples below
@@ -89,7 +89,7 @@ var body: some View {
             Text("mainView")
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background(Color.blue)
-        })).environmentObject(UIStateModel()) //Very Important
+        }).environmentObject(UIStateModel()) //Very Important
     }
 ```
 

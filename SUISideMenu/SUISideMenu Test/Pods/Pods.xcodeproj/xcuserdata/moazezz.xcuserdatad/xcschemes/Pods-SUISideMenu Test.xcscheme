@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1200"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F42CCA5CA9734C5B586B75539948275B"
-               BuildableName = "Pods_SUISideMenu_Example.framework"
-               BlueprintName = "Pods-SUISideMenu_Example"
+               BlueprintIdentifier = "2D8A69B69F8EABE6299E346D8BBC56D6"
+               BuildableName = "Pods_SUISideMenu_Test.framework"
+               BlueprintName = "Pods-SUISideMenu Test"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

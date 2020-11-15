@@ -21,6 +21,7 @@ struct SideMenuExample: View {
     @State var scaleValue : Int = 10
     var body: some View {
         return
+            
             SideMenu(menuWidth: CGFloat(menuWidthValue)/10,
                      menuStyle: self.myMenuStyle,
                      blur: CGFloat(self.blurValue),

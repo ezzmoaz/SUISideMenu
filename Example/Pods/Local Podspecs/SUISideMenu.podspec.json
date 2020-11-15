@@ -1,6 +1,6 @@
 {
   "name": "SUISideMenu",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "summary": "SUISideMenu is Simple Side menu solution for those who want to up and run very quickly. It is write with/for SwiftUI. It is simple to use",
   "homepage": "https://github.com/ezzmoaz/SUISideMenu",
   "license": {
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/ezzmoaz/SUISideMenu.git",
-    "tag": "0.4.0"
+    "tag": "0.5.0"
   },
   "platforms": {
     "ios": "13.0"

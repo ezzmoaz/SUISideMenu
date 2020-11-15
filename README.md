@@ -96,10 +96,10 @@ var body: some View {
 You Can Customize the sideMenu as Follow
 ```swift
             SideMenu(menuWidth: 0.6, // <= 1
-                     menuStyle: self.myMenuStyle,// .slideInOver || .slideInOut
+                     menuStyle: .slideInOver,// .slideInOver || .slideInOut
                      blur: 2,
                      scale: 1, // <= 1
-                     dimValue: CGFloat(dimValue)/10, // <= 1
+                     dimValue: 0.2, // <= 1
                      sideMenu: {
                         //HERE:- Put The View you want to use as SideMenu
                         //Example:

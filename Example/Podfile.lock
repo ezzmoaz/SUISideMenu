@@ -1,5 +1,5 @@
 PODS:
-  - SUISideMenu (0.1.0)
+  - SUISideMenu (0.4.0)
 
 DEPENDENCIES:
   - SUISideMenu (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SUISideMenu: 9b25219145d2be73d0f73cfd109cdfb3d3fc0f96
+  SUISideMenu: 449bea93a6ef2f17f1f46d2a993d0419998240e1
 
 PODFILE CHECKSUM: e0482abef1398c6782706802e37b18e0d077b873
 

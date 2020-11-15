@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SUISideMenu'
-  s.version          = '0.4.0'
+  s.version          = '0.5.0'
   s.summary          = 'SUISideMenu is Simple Side menu solution for those who want to up and run very quickly. It is write with/for SwiftUI. It is simple to use'
 
 # This description is used to generate tags and improve search results.

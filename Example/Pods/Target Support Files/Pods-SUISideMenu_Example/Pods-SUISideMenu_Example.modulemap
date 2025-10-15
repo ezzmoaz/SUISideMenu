@@ -1,6 +1,0 @@
-framework module Pods_SUISideMenu_Example {
-  umbrella header "Pods-SUISideMenu_Example-umbrella.h"
-
-  export *
-  module * { export * }
-}

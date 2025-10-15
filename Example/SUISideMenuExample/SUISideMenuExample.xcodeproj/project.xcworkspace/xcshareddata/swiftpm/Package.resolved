@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ezzmoaz/SUISideMenu",
       "state" : {
-        "revision" : "d8dd95b5326b7276176ac427cc97caff3f33e859",
-        "version" : "0.6.0"
+        "revision" : "fa3818f21b90a47c09c3ad84ce100df8d8d50173",
+        "version" : "0.7.0"
       }
     }
   ],

@@ -1,7 +1,0 @@
-use_frameworks!
-
-target 'SUISideMenu_Example' do
-
-  target 'SUISideMenu_Tests' do
-  end
-end

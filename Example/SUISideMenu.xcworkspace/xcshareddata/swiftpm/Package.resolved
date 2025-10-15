@@ -1,0 +1,15 @@
+{
+  "originHash" : "d6890b9f3be3d2aea351ebc1a841fd3670c5ee26a69658ed1e6e4644be36d6e5",
+  "pins" : [
+    {
+      "identity" : "suisidemenu",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ezzmoaz/SUISideMenu",
+      "state" : {
+        "revision" : "d33f88d2e7688c6567e47f9c3070d4f0bd0af611",
+        "version" : "0.5.0"
+      }
+    }
+  ],
+  "version" : 3
+}

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,9 +12,10 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		65B295D943D26C285ABB074B /* Pods_SUISideMenu_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DCACB9D5B53DA5F4591FFA /* Pods_SUISideMenu_Example.framework */; };
-		6BC2A350E84C898D8E45EFA0 /* Pods_SUISideMenu_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0275C6627479587E960AEDC2 /* Pods_SUISideMenu_Tests.framework */; };
 		752CE2DE251A734500AF1BA8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752CE2DA251A734500AF1BA8 /* SceneDelegate.swift */; };
 		752CE2DF251A734500AF1BA8 /* SideMenuExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752CE2DB251A734500AF1BA8 /* SideMenuExample.swift */; };
+		75E92B4F2EA05C3800D174D8 /* SUISideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = 75E92B4E2EA05C3800D174D8 /* SUISideMenu */; };
+		C4BAA3E6BB13399B66B45D79 /* Pods_SUISideMenu_Example_SUISideMenu_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F458F62FDB95257B2F0AADF6 /* Pods_SUISideMenu_Example_SUISideMenu_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0275C6627479587E960AEDC2 /* Pods_SUISideMenu_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SUISideMenu_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12586A72D9E10A097796BE3F /* Pods-SUISideMenu_Example-SUISideMenu_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SUISideMenu_Example-SUISideMenu_Tests.release.xcconfig"; path = "Target Support Files/Pods-SUISideMenu_Example-SUISideMenu_Tests/Pods-SUISideMenu_Example-SUISideMenu_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3973F1101BD21BFED280FC1F /* SUISideMenu.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SUISideMenu.podspec; path = ../SUISideMenu.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4974299DE77F4CE7693BD25B /* Pods-SUISideMenu_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SUISideMenu_Example.debug.xcconfig"; path = "Target Support Files/Pods-SUISideMenu_Example/Pods-SUISideMenu_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		53DB93E79F81CBD124C8BEC3 /* Pods-SUISideMenu_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SUISideMenu_Example.release.xcconfig"; path = "Target Support Files/Pods-SUISideMenu_Example/Pods-SUISideMenu_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -46,7 +47,9 @@
 		B342A1E97AB8F3A46FE1BA39 /* Pods-SUISideMenu_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SUISideMenu_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SUISideMenu_Tests/Pods-SUISideMenu_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CA49083202318C130EA76DC2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D0DCACB9D5B53DA5F4591FFA /* Pods_SUISideMenu_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SUISideMenu_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D422F3D25911F84A4760ACBD /* Pods-SUISideMenu_Example-SUISideMenu_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SUISideMenu_Example-SUISideMenu_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SUISideMenu_Example-SUISideMenu_Tests/Pods-SUISideMenu_Example-SUISideMenu_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		DBDA8785381A428B8D0B9152 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F458F62FDB95257B2F0AADF6 /* Pods_SUISideMenu_Example_SUISideMenu_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SUISideMenu_Example_SUISideMenu_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75E92B4F2EA05C3800D174D8 /* SUISideMenu in Frameworks */,
 				65B295D943D26C285ABB074B /* Pods_SUISideMenu_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BC2A350E84C898D8E45EFA0 /* Pods_SUISideMenu_Tests.framework in Frameworks */,
+				C4BAA3E6BB13399B66B45D79 /* Pods_SUISideMenu_Example_SUISideMenu_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				D0DCACB9D5B53DA5F4591FFA /* Pods_SUISideMenu_Example.framework */,
-				0275C6627479587E960AEDC2 /* Pods_SUISideMenu_Tests.framework */,
+				F458F62FDB95257B2F0AADF6 /* Pods_SUISideMenu_Example_SUISideMenu_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -155,6 +159,8 @@
 				53DB93E79F81CBD124C8BEC3 /* Pods-SUISideMenu_Example.release.xcconfig */,
 				B342A1E97AB8F3A46FE1BA39 /* Pods-SUISideMenu_Tests.debug.xcconfig */,
 				5C0F8B65076D9420E0D46631 /* Pods-SUISideMenu_Tests.release.xcconfig */,
+				D422F3D25911F84A4760ACBD /* Pods-SUISideMenu_Example-SUISideMenu_Tests.debug.xcconfig */,
+				12586A72D9E10A097796BE3F /* Pods-SUISideMenu_Example-SUISideMenu_Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -170,7 +176,6 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				78F8B43C56CE9B6819D5DC45 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -230,6 +235,9 @@
 				Base,
 			);
 			mainGroup = 607FACC71AFB9204008FA782;
+			packageReferences = (
+				75E92B4D2EA05C3800D174D8 /* XCRemoteSwiftPackageReference "SUISideMenu" */,
+			);
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,24 +268,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		78F8B43C56CE9B6819D5DC45 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SUISideMenu_Example/Pods-SUISideMenu_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SUISideMenu/SUISideMenu.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SUISideMenu.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SUISideMenu_Example/Pods-SUISideMenu_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7B0664D56544C7F6897FC7F5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -293,7 +283,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SUISideMenu_Tests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SUISideMenu_Example-SUISideMenu_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -467,7 +457,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -479,7 +470,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SUISideMenu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,7 +490,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SUISideMenu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -508,7 +505,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B342A1E97AB8F3A46FE1BA39 /* Pods-SUISideMenu_Tests.debug.xcconfig */;
+			baseConfigurationReference = D422F3D25911F84A4760ACBD /* Pods-SUISideMenu_Example-SUISideMenu_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -519,7 +516,11 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -530,14 +531,18 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C0F8B65076D9420E0D46631 /* Pods-SUISideMenu_Tests.release.xcconfig */;
+			baseConfigurationReference = 12586A72D9E10A097796BE3F /* Pods-SUISideMenu_Example-SUISideMenu_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -577,6 +582,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		75E92B4D2EA05C3800D174D8 /* XCRemoteSwiftPackageReference "SUISideMenu" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ezzmoaz/SUISideMenu";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		75E92B4E2EA05C3800D174D8 /* SUISideMenu */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75E92B4D2EA05C3800D174D8 /* XCRemoteSwiftPackageReference "SUISideMenu" */;
+			productName = SUISideMenu;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
 }

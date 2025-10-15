@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_SUISideMenu_TestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_SUISideMenu_TestsVersionString[];
+FOUNDATION_EXPORT double Pods_SUISideMenu_Example_SUISideMenu_TestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_SUISideMenu_Example_SUISideMenu_TestsVersionString[];
 

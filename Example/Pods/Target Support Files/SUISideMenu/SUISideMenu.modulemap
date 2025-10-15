@@ -1,6 +1,0 @@
-framework module SUISideMenu {
-  umbrella header "SUISideMenu-umbrella.h"
-
-  export *
-  module * { export * }
-}

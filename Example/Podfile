@@ -1,11 +1,7 @@
 use_frameworks!
 
 target 'SUISideMenu_Example' do
-  pod 'SUISideMenu', :path => '../'
 
   target 'SUISideMenu_Tests' do
-    inherit! :search_paths
-
-    
   end
 end

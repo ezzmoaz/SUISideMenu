@@ -20,8 +20,6 @@ struct SideMenuExample: View {
     @State var dimValue : Int = 2
     @State var scaleValue : Int = 10
     var body: some View {
-        return
-            
             SideMenu(menuWidth: CGFloat(menuWidthValue)/10,
                      menuStyle: self.myMenuStyle,
                      blur: CGFloat(self.blurValue),
@@ -64,7 +62,6 @@ struct SideMenuExample: View {
                     VStack{
                         Text("Menu Width")
                         Picker("Scale", selection: self.$menuWidthValue) {
-//                            Text("0").tag(0)
                             Text("0.1").tag(1)
                             Text("0.2").tag(2)
                             Text("0.3").tag(3)

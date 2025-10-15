@@ -39,25 +39,21 @@ Check out the example project to see it in action!
 
 
 ## Installation
-### CocoaPods
+### Swift Package Manager
 
-[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
+[Swift Package Manager](https://swift.org/package-manager/) is a
+dependency manager for Swift projects. It is built into Xcode and
+doesn't require any additional installation.
 
-```bash
-$ gem install cocoapods
-```
+To integrate SideMenu into your Xcode project using Swift Package
+Manager, open your project in Xcode and select:
 
-To integrate SideMenu into your Xcode project using CocoaPods, specify it in your `Podfile`:
+**File \> Add Packages...**
 
-```ruby
-pod 'SUISideMenu'
-```
+Then, add the following package repository URL:
 
-Then, run the following command:
+    https://github.com/ezzmoaz/SUISideMenu
 
-```bash
-$ pod install
-```
 
 
 

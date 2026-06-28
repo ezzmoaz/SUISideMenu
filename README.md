@@ -170,6 +170,12 @@ SideMenu(isOpen: $isOpen, configuration: MenuPresets.wide) { … } mainView: { �
 
 ## Adaptive presentation
 
+One component, the right pattern on every device. With `adaptive: true`, `SUISideMenu` **fills the gap between iPhone and iPad**: it provides a hand-built drawer where the platform has no native one (iPhone / compact), and steps aside for Apple's native `NavigationSplitView` where the platform does (iPad / regular). You write the screen once and get the idiomatic presentation for each.
+
+| iPad — native split view (`adaptive: true`) |
+| --- |
+| ![](https://github.com/ezzmoaz/SUISideMenu/blob/master/Assets/ipad.gif) |
+
 You get the native `NavigationSplitView` behaviour **only when both conditions are true**:
 
 1. `adaptive: true` is passed to `SideMenu`, **and**

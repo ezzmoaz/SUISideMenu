@@ -11,7 +11,13 @@ import SwiftUI
 struct SUISideMenuExampleApp: App {
     var body: some Scene {
         WindowGroup {
-            SideMenuExample()
+            TabView {
+                SideMenuExample()
+                    .tabItem { Label("Config", systemImage: "slider.horizontal.3") }
+
+                NavigationExample()
+                    .tabItem { Label("Navigation", systemImage: "rectangle.stack") }
+            }
         }
     }
 }

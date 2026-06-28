@@ -18,6 +18,7 @@ struct SideMenuExample: View {
     @State private var blur = 2
     @State private var scale = 10      // 1.0
     @State private var dim = 2         // 0.2
+    @State private var adaptive = true
 
     var body: some View {
         SideMenu(
@@ -27,7 +28,7 @@ struct SideMenuExample: View {
             blur: CGFloat(blur),
             scale: CGFloat(scale) / 10,
             dimValue: CGFloat(dim) / 10,
-            adaptive: true,
+            adaptive: adaptive,
             sideMenu: {
                 MenuPanel(isOpen: $isOpen)
             },
@@ -38,7 +39,8 @@ struct SideMenuExample: View {
                     menuWidth: $menuWidth,
                     blur: $blur,
                     scale: $scale,
-                    dim: $dim
+                    dim: $dim,
+                    adaptive: $adaptive
                 )
             }
         )
@@ -79,6 +81,16 @@ private struct ControlsPanel: View {
     @Binding var blur: Int
     @Binding var scale: Int
     @Binding var dim: Int
+    @Binding var adaptive: Bool
+
+    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
+
+    /// `menuWidth` is ignored only when the split view is actually active —
+    /// i.e. adaptive is on AND we're in a regular size class (iPad). On
+    /// iPhone it's still a drawer that uses `menuWidth`.
+    private var usesSplitView: Bool {
+        adaptive && horizontalSizeClass == .regular
+    }
 
     private static let tenths: [StepPicker.Option] =
         [(0, "0"), (1, "0.1"), (2, "0.2"), (3, "0.3"), (5, "0.5"),
@@ -88,28 +100,50 @@ private struct ControlsPanel: View {
         [(0, "0"), (2, "2"), (3, "3"), (5, "5"), (6, "6"), (7, "7"), (8, "8"), (9, "9"), (10, "10")]
 
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 18) {
-                Button("Open Menu") {
-                    withAnimation { isOpen = true }
-                }
-                .buttonStyle(.borderedProminent)
+        NavigationStack {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 18) {
+                    Picker("Style", selection: $style) {
+                        Text("slideInOver").tag(SideMenuStyle.slideInOver)
+                        Text("slideInOut").tag(SideMenuStyle.slideInOut)
+                    }
+                    .pickerStyle(.segmented)
 
-                Picker("Style", selection: $style) {
-                    Text("slideInOver").tag(SideMenuStyle.slideInOver)
-                    Text("slideInOut").tag(SideMenuStyle.slideInOut)
-                }
-                .pickerStyle(.segmented)
+                    StepPicker(
+                        title: "Menu width",
+                        caption: usesSplitView ? "Set by the split view on iPad" : nil,
+                        value: $menuWidth,
+                        options: Self.tenths
+                    )
+                    .disabled(usesSplitView)
 
-                StepPicker(title: "Menu width", value: $menuWidth, options: Self.tenths)
-                StepPicker(title: "Blur", caption: "slideInOver only", value: $blur, options: Self.blurSteps)
-                StepPicker(title: "Scale", caption: "slideInOver only", value: $scale, options: Self.tenths)
-                StepPicker(title: "Dim", value: $dim, options: Self.tenths)
+                    StepPicker(title: "Blur", caption: "slideInOver only", value: $blur, options: Self.blurSteps)
+                    StepPicker(title: "Scale", caption: "slideInOver only", value: $scale, options: Self.tenths)
+                    StepPicker(title: "Dim", value: $dim, options: Self.tenths)
+
+                    // The adaptive flag only has a visible effect on a regular
+                    // size class, so only surface the toggle there.
+                    if horizontalSizeClass == .regular {
+                        Toggle("Adaptive (split view)", isOn: $adaptive)
+                            .font(.subheadline.weight(.semibold))
+                    }
+                }
+                .padding()
+                .frame(maxWidth: .infinity, alignment: .leading)
             }
-            .padding()
-            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(Color.blue.opacity(0.08))
+            .navigationTitle("SUISideMenu")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button {
+                        withAnimation { isOpen = true }
+                    } label: {
+                        Image(systemName: "line.3.horizontal")
+                    }
+                }
+            }
         }
-        .background(Color.blue.opacity(0.08))
     }
 }
 

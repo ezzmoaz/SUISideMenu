@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "lineLength": 110,
+  "indentation": {
+    "spaces": 4
+  },
+  "maximumBlankLines": 1,
+  "respectsExistingLineBreaks": true,
+  "lineBreakBeforeControlFlowKeywords": false,
+  "lineBreakBeforeEachArgument": false,
+  "rules": {
+    "AlwaysUseLowerCamelCase": true,
+    "OrderedImports": true,
+    "ReturnVoidInsteadOfEmptyTuple": true,
+    "UseLetInEveryBoundCaseVariable": true,
+    "UseShorthandTypeNames": true
+  }
+}

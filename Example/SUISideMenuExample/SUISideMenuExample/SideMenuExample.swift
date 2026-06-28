@@ -8,134 +8,140 @@
 import SwiftUI
 import SUISideMenu
 
+/// Demo screen: a `SideMenu` whose main content lets you tweak every option
+/// live. Slider-equivalent values are kept as "tenths" (`Int` 0...10) so the
+/// segmented pickers stay readable.
 struct SideMenuExample: View {
-    @EnvironmentObject var UIState: UIStateModel
-    @State var myMenuStyle : SUISideMenu.MenuStyle = .slideInOver
-    @State var menuWidthValue : Int = 6
-    @State var blurValue : Int = 2
-    @State var dimValue : Int = 2
-    @State var scaleValue : Int = 10
+    @State private var isOpen = false
+    @State private var style: SideMenuStyle = .slideInOver
+    @State private var menuWidth = 6   // 0.6
+    @State private var blur = 2
+    @State private var scale = 10      // 1.0
+    @State private var dim = 2         // 0.2
+
     var body: some View {
-            SideMenu(menuWidth: CGFloat(menuWidthValue)/10,
-                     menuStyle: self.myMenuStyle,
-                     blur: CGFloat(self.blurValue),
-                     scale: CGFloat(scaleValue)/10,
-                     dimValue: CGFloat(dimValue)/10,
-                     sideMenu: {
-                        VStack{
-                            Text("SideMenu")
-                            Button(action: {
-                                self.UIState.toggleMenuScreen()
-                            }) {
-                                Text("Close Menu")
-                                .padding()
-                                    .foregroundColor(.black)
-                                    .border(Color.black, width: 1)
-                                
-                            }
-                        }
-                        .frame( maxWidth: .infinity, maxHeight: .infinity)
-                        .background(Color.red)
-                        .transition(AnyTransition.slide)
-                        .animation(.spring())
-            }, mainView: {
-                VStack{
-                    Text("Main")
-                    Button(action: {
-                        self.UIState.toggleMenuScreen()
-                    }) {
-                        Text("Open Menu")
-                        .padding()
-                            .foregroundColor(.black)
-                            .border(Color.black, width: 1)
-                    }
-                    Text("Pick Style")
-                    Picker("Pick Style", selection: self.$myMenuStyle) {
-                        Text("slideInOver").tag(MenuStyle.slideInOver)
-                        Text("slideInOut").tag(MenuStyle.slideInOut)
-                    }
-                    .pickerStyle(SegmentedPickerStyle())
-                    VStack{
-                        Text("Menu Width")
-                        Picker("Scale", selection: self.$menuWidthValue) {
-                            Text("0.1").tag(1)
-                            Text("0.2").tag(2)
-                            Text("0.3").tag(3)
-                            Text("0.5").tag(5)
-                            Text("0.6").tag(6)
-                            Text("0.7").tag(7)
-                            Text("0.8").tag(8)
-                            Text("0.9").tag(9)
-                            Text("1").tag(10)
-                        }
-                        .pickerStyle(SegmentedPickerStyle())
-                        
-                        Text("Blur")
-                        Text("Only avalible With slideInOver menu Style.")
-                            .font(.caption)
-                            .lineLimit(nil)
-                        Picker("Blur", selection: self.$blurValue) {
-                            Text("0").tag(0)
-                            Text("1").tag(1)
-                            Text("2").tag(2)
-                            Text("3").tag(3)
-                            Text("5").tag(5)
-                            Text("6").tag(6)
-                            Text("7").tag(7)
-                            Text("8").tag(8)
-                            Text("9").tag(9)
-                            Text("10").tag(10)
-                        }
-                        .pickerStyle(SegmentedPickerStyle())
-                        Text("Scale")
-                        Text("Only avalible With slideInOver menu Style")
-                        .font(.caption)
-                        .lineLimit(nil)
-                        Picker("Scale", selection: self.$scaleValue) {
-                            Text("0").tag(0)
-                            Text("0.1").tag(1)
-                            Text("0.2").tag(2)
-                            Text("0.3").tag(3)
-                            Text("0.5").tag(5)
-                            Text("0.6").tag(6)
-                            Text("0.7").tag(7)
-                            Text("0.8").tag(8)
-                            Text("0.9").tag(9)
-                            Text("1").tag(10)
-                        }
-                        .pickerStyle(SegmentedPickerStyle())
-                    }
-                    
-                    Text("Dim")
-                    Picker("Dim", selection: self.$dimValue) {
-                        Text("0").tag(0)
-                        Text("0.1").tag(1)
-                        Text("0.2").tag(2)
-                        Text("0.3").tag(3)
-                        Text("0.5").tag(5)
-                        Text("0.6").tag(6)
-                        Text("0.7").tag(7)
-                        Text("0.8").tag(8)
-                        Text("0.9").tag(9)
-                        Text("1").tag(10)
-                    }
-                    .pickerStyle(SegmentedPickerStyle())
-                    
-                    
-                }
-            
-                .frame( maxWidth: .infinity, maxHeight: .infinity)
-                .padding()
-                .background(Color.blue)
-                .transition(AnyTransition.slide)
-                .animation(.spring())
-            })
-        
+        SideMenu(
+            isOpen: $isOpen,
+            menuWidth: CGFloat(menuWidth) / 10,
+            menuStyle: style,
+            blur: CGFloat(blur),
+            scale: CGFloat(scale) / 10,
+            dimValue: CGFloat(dim) / 10,
+            adaptive: true,
+            sideMenu: {
+                MenuPanel(isOpen: $isOpen)
+            },
+            mainView: {
+                ControlsPanel(
+                    isOpen: $isOpen,
+                    style: $style,
+                    menuWidth: $menuWidth,
+                    blur: $blur,
+                    scale: $scale,
+                    dim: $dim
+                )
+            }
+        )
     }
-    
-    
+}
+
+// MARK: - Menu panel
+
+private struct MenuPanel: View {
+    @Binding var isOpen: Bool
+
+    var body: some View {
+        VStack(spacing: 16) {
+            Text("SideMenu")
+                .font(.title3.bold())
+
+            Button("Close Menu") {
+                withAnimation { isOpen = false }
+            }
+            .buttonStyle(.bordered)
+            .tint(.white)
+
+            Spacer()
+        }
+        .padding(.top, 60)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .foregroundStyle(.white)
+        .background(Color.red)
+    }
+}
+
+// MARK: - Controls panel
+
+private struct ControlsPanel: View {
+    @Binding var isOpen: Bool
+    @Binding var style: SideMenuStyle
+    @Binding var menuWidth: Int
+    @Binding var blur: Int
+    @Binding var scale: Int
+    @Binding var dim: Int
+
+    private static let tenths: [StepPicker.Option] =
+        [(0, "0"), (1, "0.1"), (2, "0.2"), (3, "0.3"), (5, "0.5"),
+         (6, "0.6"), (7, "0.7"), (8, "0.8"), (9, "0.9"), (10, "1")]
+
+    private static let blurSteps: [StepPicker.Option] =
+        [(0, "0"), (2, "2"), (3, "3"), (5, "5"), (6, "6"), (7, "7"), (8, "8"), (9, "9"), (10, "10")]
+
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 18) {
+                Button("Open Menu") {
+                    withAnimation { isOpen = true }
+                }
+                .buttonStyle(.borderedProminent)
+
+                Picker("Style", selection: $style) {
+                    Text("slideInOver").tag(SideMenuStyle.slideInOver)
+                    Text("slideInOut").tag(SideMenuStyle.slideInOut)
+                }
+                .pickerStyle(.segmented)
+
+                StepPicker(title: "Menu width", value: $menuWidth, options: Self.tenths)
+                StepPicker(title: "Blur", caption: "slideInOver only", value: $blur, options: Self.blurSteps)
+                StepPicker(title: "Scale", caption: "slideInOver only", value: $scale, options: Self.tenths)
+                StepPicker(title: "Dim", value: $dim, options: Self.tenths)
+            }
+            .padding()
+            .frame(maxWidth: .infinity, alignment: .leading)
+        }
+        .background(Color.blue.opacity(0.08))
+    }
+}
+
+// MARK: - Reusable labelled segmented picker
+
+private struct StepPicker: View {
+    typealias Option = (tag: Int, label: String)
+
+    let title: String
+    var caption: String? = nil
+    @Binding var value: Int
+    let options: [Option]
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            Text(title)
+                .font(.subheadline.weight(.semibold))
+            if let caption {
+                Text(caption)
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
+            Picker(title, selection: $value) {
+                ForEach(options, id: \.tag) { option in
+                    Text(option.label).tag(option.tag)
+                }
+            }
+            .pickerStyle(.segmented)
+        }
+    }
 }
 
 #Preview {
-    SideMenuExample().environmentObject(UIStateModel())
+    SideMenuExample()
 }

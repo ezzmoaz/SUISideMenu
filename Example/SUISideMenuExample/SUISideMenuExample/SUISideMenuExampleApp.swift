@@ -6,13 +6,12 @@
 //
 
 import SwiftUI
-import SUISideMenu
 
 @main
 struct SUISideMenuExampleApp: App {
     var body: some Scene {
         WindowGroup {
-            SideMenuExample().environmentObject(UIStateModel())
+            SideMenuExample()
         }
     }
 }

@@ -1,5 +1,17 @@
+# macOS
 .DS_Store
+**/.DS_Store
+
+# Swift Package Manager
 /.build
 /Packages
+# Package.resolved is an app-level lockfile; libraries should not commit it.
+/Package.resolved
+.swiftpm/configuration
+.swiftpm/**/xcuserdata/
+
+# Xcode
 /*.xcodeproj
 xcuserdata/
+*.xcuserstate
+DerivedData/
